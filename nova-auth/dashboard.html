@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA AUTH | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h2>NOVA<span>.</span></h2>
+            <p>AUTH</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#profile">My Profile</a>
+            <a href="#settings">Settings</a>
+        </nav>
+
+        <button class="logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back! Here's your account overview.</p>
+            </div>
+
+            <div class="user-avatar" id="userAvatar">
+    U
+</div>
+        </header>
+
+
+        <!-- Welcome Card -->
+
+        <section class="welcome-card">
+
+            <div>
+                <span class="welcome-label">WELCOME BACK</span>
+
+                <h2 id="welcomeName">Hello, User!</h2>
+
+                <p>
+                    We're glad to have you here.
+                    Manage your account from your dashboard.
+                </p>
+            </div>
+
+            <div class="welcome-icon">
+                N
+            </div>
+
+        </section>
+
+
+        <!-- Account Cards -->
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <div class="card-icon">01</div>
+                <h3>Account Status</h3>
+                <p>Active</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">02</div>
+                <h3>Account Type</h3>
+                <p>Standard User</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">03</div>
+                <h3>Security</h3>
+                <p>Protected Account</p>
+            </div>
+
+        </section>
+
+
+        <!-- Profile Section -->
+
+        <section class="profile-section" id="profile">
+
+            <h2>Profile Information</h2>
+
+            <div class="profile-info">
+
+             <div>
+                <span>Full Name</span>
+                           <p id="userName">Loading...</p>
+                      </div>
+
+                      <div>
+                     <span>Email Address</span>
+                    <p id="userEmail">Loading...</p>
+                  </div>
+
+            </div>
+
+        </section>
+           
+        <!-- Profile Update Section -->
+
+<section class="profile-section" id="profile">
+
+    <h2>Profile Information</h2>
+
+    <div class="profile-info">
+
+        <div>
+            <span>Full Name</span>
+            <p id="userName">Loading...</p>
+        </div>
+
+        <div>
+            <span>Email Address</span>
+            <p id="userEmail">Loading...</p>
+        </div>
+
+    </div>
+
+    <div class="profile-edit">
+
+        <h3>Update Your Profile</h3>
+
+        <form id="profileUpdateForm">
+
+            <div class="input-group">
+                <label for="updateName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="updateName"
+                    placeholder="Enter your new name"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="signup-btn">
+                Update Profile
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+        <footer class="dashboard-footer">
+            © 2026 NOVA AUTH. All rights reserved.
+        </footer>
+
+    </main>
+     
+       <script type="module" src="script.js"></script>
+
+</body>
+</html>
